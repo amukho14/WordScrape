@@ -12,8 +12,9 @@ path = "C:\\Users\\amukhopadhyay\\Downloads\\TrickyStuff\\PythonGrey\\wordsDontK
 wordSentence ="C:\\Users\\amukhopadhyay\\Downloads\\TrickyStuff\\PythonGrey\\WordSentence.csv"
 wordDefn ="C:\\Users\\amukhopadhyay\\Downloads\\TrickyStuff\\PythonGrey\\WordDefinition.csv"
 wordDefnSentence ="C:\\Users\\amukhopadhyay\\Downloads\\TrickyStuff\\PythonGrey\\WordDefinitionSentence.csv"
+wordCovered="C:\\Users\\amukhopadhyay\\Downloads\\TrickyStuff\\PythonGrey\\WordsAlreadyCovered.csv"
 ins = open( path, "r" )
 for line in ins:
     var = line.strip().replace("\n","")
     # print var
-    generateReport(var, wordDefn, wordSentence, wordDefnSentence)
+    generateReport(var, wordDefn, wordSentence, wordDefnSentence, wordCovered)

@@ -7,10 +7,15 @@ import csv
 import re
 import json
 import os
+import os
 
 # var = raw_input("Please enter word: ")
 
-def generateReport(var, wordDefn, wordSentence,wordDefnSentence):
+def generateReport(var, wordDefn, wordSentence,wordDefnSentence, wordCovered):
+
+    if os.path.isfile(wordCovered) and var in open(wordCovered).read():
+            print var, " is already covered"
+            return
     mnemonics = returnMnemonics(var)
     br = Browser()
     br.set_handle_robots(False)
@@ -74,6 +79,9 @@ def generateReport(var, wordDefn, wordSentence,wordDefnSentence):
                     sentence = sentence + j.string.replace(',',' ').strip()+","
     # print sentence
 
+    with open(wordCovered, 'a') as f:
+        f.write(var.encode('utf-8')+",")
+        f.close()
     with open(wordDefn, 'a') as f:
         f.write(definition.encode('utf-8')+"\n")
         f.close()
@@ -83,3 +91,6 @@ def generateReport(var, wordDefn, wordSentence,wordDefnSentence):
     with open(wordDefnSentence, 'a') as f:
         f.write(definition.encode('utf-8')+", "+ sentence.encode('utf-8')+"\n")
         f.close()
+
+
+
