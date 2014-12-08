@@ -3,14 +3,11 @@ __author__ = 'amukhopadhyay'
 from mechanize import Browser
 from bs4 import BeautifulSoup
 from getMnemonics import returnMnemonics
-import csv
-import re
-import json
-import os
+import threading
 import os
 
 # var = raw_input("Please enter word: ")
-
+MY_LOCK = threading.Lock()
 def generateReport(var, wordDefn, wordSentence,wordDefnSentence, wordCovered):
 
     if os.path.isfile(wordCovered) and var in open(wordCovered).read():
@@ -35,24 +32,24 @@ def generateReport(var, wordDefn, wordSentence,wordDefnSentence, wordCovered):
     # soup=BeautifulSoup(data)
     # print soup.t
 
-
-    with open(wordSentence, 'a') as f:
-        # print var
-
-        f.write(var.encode('utf-8')+", "+mnemonics.encode('utf-8')+", ")
-        # f.write("\n")
-        f.close()
-    with open(wordDefn, 'a') as f:
-        # print var
-        f.write(var.encode('utf-8')+", "+mnemonics.encode('utf-8')+", ")
-        # f.write("\n")
-        f.close()
-    with open(wordDefnSentence, 'a') as f:
-        # print var
-        f.write(var.encode('utf-8')+", "+mnemonics.encode('utf-8')+", ")
-        # f.write("\n")
-        f.close()
-
+    # MY_LOCK.acquire()
+    # with open(wordSentence, 'a') as f:
+    #     # print var
+    #
+    #     f.write(var.encode('utf-8')+", "+mnemonics.encode('utf-8')+", ")
+    #     # f.write("\n")
+    #     f.close()
+    # with open(wordDefn, 'a') as f:
+    #     # print var
+    #     f.write(var.encode('utf-8')+", "+mnemonics.encode('utf-8')+", ")
+    #     # f.write("\n")
+    #     f.close()
+    # with open(wordDefnSentence, 'a') as f:
+    #     # print var
+    #     f.write(var.encode('utf-8')+", "+mnemonics.encode('utf-8')+", ")
+    #     # f.write("\n")
+    #     f.close()
+    # MY_LOCK.release()
 
     #get Defn
 
@@ -79,18 +76,27 @@ def generateReport(var, wordDefn, wordSentence,wordDefnSentence, wordCovered):
                     sentence = sentence + j.string.replace(',',' ').strip()+","
     # print sentence
 
+
+    MY_LOCK.acquire()
+    with open(wordSentence, 'a') as f:
+        # print var
+
+        f.write(var.encode('utf-8')+", "+mnemonics.encode('utf-8')+", "+sentence.encode('utf-8')+"\n")
+        # f.write("\n")
+        f.close()
+    with open(wordDefn, 'a') as f:
+        # print var
+        f.write(var.encode('utf-8')+", "+mnemonics.encode('utf-8')+", "+definition.encode('utf-8')+"\n")
+        # f.write("\n")
+        f.close()
+    with open(wordDefnSentence, 'a') as f:
+        # print var
+        f.write(var.encode('utf-8')+", "+mnemonics.encode('utf-8')+", "+definition.encode('utf-8')+", "+ sentence.encode('utf-8')+"\n")
+        # f.write("\n")
+        f.close()
     with open(wordCovered, 'a') as f:
         f.write(var.encode('utf-8')+",")
         f.close()
-    with open(wordDefn, 'a') as f:
-        f.write(definition.encode('utf-8')+"\n")
-        f.close()
-    with open(wordSentence, 'a') as f:
-        f.write(sentence.encode('utf-8')+"\n")
-        f.close()
-    with open(wordDefnSentence, 'a') as f:
-        f.write(definition.encode('utf-8')+", "+ sentence.encode('utf-8')+"\n")
-        f.close()
+    MY_LOCK.release()
 
-
-
+    return

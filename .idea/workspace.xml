@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/googleExcel.py" line="23" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/googleExcel.py" line="20" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb49337e-183f-4da2-b687-91d37a6351cc" name="Default" comment="" />
@@ -26,11 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="googleExcel.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="googleExcel.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/googleExcel.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1734">
-              <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.65695065" vertical-offset="98" max-vertical-offset="1836">
+              <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
               <folding>
                 <element signature="e#30#59#0" expanded="true" />
               </folding>
@@ -38,12 +38,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="genResults.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="genResults.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/genResults.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1793249" vertical-offset="0" max-vertical-offset="1683">
-              <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1683">
+              <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+              <folding>
+                <element signature="e#29#67#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,9 +81,9 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/getMnemonics.py" />
-        <option value="$PROJECT_DIR$/googleExcel.py" />
         <option value="$PROJECT_DIR$/readFromQuizletEditedFile.py" />
         <option value="$PROJECT_DIR$/genResults.py" />
+        <option value="$PROJECT_DIR$/googleExcel.py" />
       </list>
     </option>
   </component>
@@ -421,7 +423,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="459">
           <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="87" />
-          <folding />
+          <folding>
+            <element signature="e#29#67#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -455,7 +459,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="459">
           <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="87" />
-          <folding />
+          <folding>
+            <element signature="e#29#67#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -489,7 +495,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="459">
           <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="87" />
-          <folding />
+          <folding>
+            <element signature="e#29#67#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -523,7 +531,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="391">
           <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="e#29#67#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -557,7 +567,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="425">
           <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-          <folding />
+          <folding>
+            <element signature="e#29#67#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -598,7 +610,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="425">
           <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="e#29#67#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -632,7 +646,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="425">
           <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding />
+          <folding>
+            <element signature="e#29#67#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -666,7 +682,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="408">
           <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-          <folding />
+          <folding>
+            <element signature="e#29#67#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -700,7 +718,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="357">
           <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
-          <folding />
+          <folding>
+            <element signature="e#29#67#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -745,21 +765,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/googleExcel.py">
+    <entry file="file://$PROJECT_DIR$/genResults.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1734">
-          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1683">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
-            <element signature="e#30#59#0" expanded="true" />
+            <element signature="e#29#67#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/genResults.py">
+    <entry file="file://$PROJECT_DIR$/googleExcel.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1793249" vertical-offset="0" max-vertical-offset="1683">
-          <caret line="5" column="29" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
-          <folding />
+        <state vertical-scroll-proportion="0.65695065" vertical-offset="98" max-vertical-offset="1836">
+          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding>
+            <element signature="e#30#59#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
