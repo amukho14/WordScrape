@@ -26,32 +26,6 @@ def generateReport(var, wordDefn, wordSentence,wordDefnSentence, wordCovered):
         print "what word is this, man? " + var
         return
     soup = BeautifulSoup(br.response().read())
-    # print soup.prettify()
-
-    # data = open(url,'r').read()
-    # soup=BeautifulSoup(data)
-    # print soup.t
-
-    # MY_LOCK.acquire()
-    # with open(wordSentence, 'a') as f:
-    #     # print var
-    #
-    #     f.write(var.encode('utf-8')+", "+mnemonics.encode('utf-8')+", ")
-    #     # f.write("\n")
-    #     f.close()
-    # with open(wordDefn, 'a') as f:
-    #     # print var
-    #     f.write(var.encode('utf-8')+", "+mnemonics.encode('utf-8')+", ")
-    #     # f.write("\n")
-    #     f.close()
-    # with open(wordDefnSentence, 'a') as f:
-    #     # print var
-    #     f.write(var.encode('utf-8')+", "+mnemonics.encode('utf-8')+", ")
-    #     # f.write("\n")
-    #     f.close()
-    # MY_LOCK.release()
-
-    #get Defn
 
     definition=""
     for i in soup.find_all('span',{'class':'definition'}):
