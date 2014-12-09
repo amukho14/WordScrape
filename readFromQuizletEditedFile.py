@@ -5,11 +5,6 @@ from bs4 import BeautifulSoup
 from mechanize import Browser
 from datetime import datetime
 
-# from mechanize import
-
-# var = raw_input("Please enter word: ")
-# generateReport(var)
-#
 
 path = "C:\\Users\\amukhopadhyay\\Desktop\\star800.txt"
 # path = "C:\\Users\\amukhopadhyay\\Downloads\\TrickyStuff\\PythonGrey\\wordsDontKnow.txt"

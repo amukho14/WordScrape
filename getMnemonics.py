@@ -20,8 +20,6 @@ def returnMnemonics(var):
     for i in soup_mn.find_all('div',{'style':'padding-top: 10px;'}):
 
         soup2 = BeautifulSoup(str(i))
-        # buildDef = ""
-        # print soup2.prettify()
         for x in soup2.find_all('div', {'class':'row-fluid'}):
             soup3 = BeautifulSoup(str(x))
 
@@ -38,6 +36,3 @@ def returnMnemonics(var):
                             mnemonics = mnemonics+z.strip().replace(','," ").replace('\n', '').replace(".","")+","
                         count = count+1
     return mnemonics
-#
-# var = "incumbent"
-# print returnMnemonics(var)
